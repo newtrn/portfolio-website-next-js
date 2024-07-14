@@ -9,8 +9,7 @@ import Contact from '@/constants/contact.json'
 import Link from 'next/link'
 
 const Sidebar = () => {
-  const isCompact = useMediaQuery('(max-width: 768px)')
-  const [collapsed, setCollapsed] = useState(isCompact)
+  const [collapsed, setCollapsed] = useState(false)
   const educationData = Education.data
   const contactData = Contact.data
 
