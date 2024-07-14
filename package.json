@@ -6,19 +6,26 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "tailwindcss": "npx tailwindcss -i ./styles/global.css -o ./public/tailwindcss/output.css --watch"
   },
   "dependencies": {
+    "@nextui-org/react": "^2.4.2",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.3.2",
+    "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.5"
+    "tailwind-merge": "^2.4.0",
+    "usehooks-ts": "^3.1.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@iconify/react": "^5.0.1",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "postcss": "^8",
-    "tailwindcss": "^3.4.1"
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
   }
 }

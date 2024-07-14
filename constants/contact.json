@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+      "name": "Phone",
+      "value": "+66 896808065",
+      "link": "tel:+66896808065"
+    } ,
+    {
+      "name": "Email",
+      "value": "t_ongyod@hotmail.com",
+      "link": "mailto:tt_ongyod@hotmail.com"
+    },
+    {
+      "name": "LinkedIn",
+      "value": "suppawits",
+      "link": "https://www.linkedin.com/in/suppawit-satitsongtam-88b1231a3/"
+    },
+    {
+      "name": "GitHub",
+      "value": "newtrn",
+      "link": "https://github.com/newtrn"
+    }
+  ]
+}

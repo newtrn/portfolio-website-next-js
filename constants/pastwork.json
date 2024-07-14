@@ -1,0 +1,46 @@
+{
+  "data": [
+    {
+      "title": "ChaoChao & Co.",
+      "description": "Car rental service website, rent a car by its availability and price also with filter and search function",
+      "image": "/images/pastwork/cover/chaochao.png",
+      "skill": ["Next.js", "Tailwind CSS"]
+    },
+    {
+      "title": "ChaoChao & Co. - Lister",
+      "description": "Car liser website, use to manage car availability and price also booking management",
+      "image": "/images/pastwork/cover/chaochao-lister.png",
+      "skill": ["Next.js", "Tailwind CSS"]
+    },
+    {
+      "title": "Profile website - Next.js",
+      "description": "Profile website with parallax scroll effect and responsive design",
+      "image": "/images/pastwork/cover/profile-next.png",
+      "skill": ["Next.js", "Tailwind CSS"]
+    },
+    {
+      "title": "Profile website - React.js",
+      "description": "Profile website with little animations and responsive design",
+      "image": "/images/pastwork/cover/profile-react.png",
+      "skill": ["React", "Tailwind CSS"]
+    },
+    {
+      "title": "Landing page - Personal used",
+      "description": "Landing page with css and link out to other website",
+      "image": "/images/pastwork/cover/landing-page.png",
+      "skill": ["React", "CSS"]
+    },
+    {
+      "title": "Profile website [White] - React.js",
+      "description": "Profile website with little animations and responsive design",
+      "image": "/images/pastwork/cover/profile-white.png",
+      "skill": ["React", "CSS"]
+    },
+    {
+      "title": "Animated profile website - React.js",
+      "description": "Profile website with animations and responsive design",
+      "image": "/images/pastwork/cover/animate-profile.png",
+      "skill": ["React", "CSS"]
+    }
+  ]
+}

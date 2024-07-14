@@ -1,0 +1,15 @@
+@import url('./tailwind.css');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  color: white;
+  background-image: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(0, 24, 51, 0.6), rgba(25, 8, 43, 0.3));
+}
