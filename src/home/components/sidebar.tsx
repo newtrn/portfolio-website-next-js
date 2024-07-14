@@ -23,7 +23,7 @@ const Sidebar = () => {
       className={cn(
         'relative flex h-full w-screen md:w-72 flex-col !border-r-small border-divider p-6 transition-width bg-white bg-opacity-5 shadow-sidebar ease-in-out duration-200 cursor-pointer space-y-6 divide-y divide-dashed divide-white/40 overflow-y-auto overflow-x-hidden',
         {
-          'w-16 items-center px-2 py-6': !collapsed,
+          '!w-16 items-center px-2 py-6': !collapsed,
         }
       )}
       style={{ scrollbarWidth: 'none' }}

@@ -1206,6 +1206,10 @@ video {
   width: 100vw;
 }
 
+.\!w-16 {
+  width: 4rem !important;
+}
+
 .min-w-10 {
   min-width: 2.5rem;
 }
@@ -4220,6 +4224,10 @@ body {
     width: 70%;
   }
 
+  .md\:w-16 {
+    width: 4rem;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -4231,6 +4239,11 @@ body {
   .md\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .md\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 }
 
