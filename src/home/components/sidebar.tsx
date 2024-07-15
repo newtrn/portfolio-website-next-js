@@ -28,8 +28,12 @@ const Sidebar = () => {
       style={{ scrollbarWidth: 'none' }}
     >
       <div className="px-3 space-y-4">
-        <Avatar isBordered src="/images/profile.png" className={cn('flex-none ease-in-out duration-200 w-10 h-10', { 'w-40 h-40': collapsed })} />
-        <div className={cn('flex max-w-full flex-col visible opacity-100', { 'hidden': !collapsed })}>
+        <Avatar isBordered src="/images/profile.png" className={cn('flex-none ease duration-200 w-10 h-10', { 'w-40 h-40': collapsed })} />
+        <div
+          className={cn('flex max-w-full flex-col visible opacity-100 delay-100 ease transition-opacity', {
+            'invisible absolute delay-0': !collapsed,
+          })}
+        >
           <p className="truncate text-2xl font-medium text-default-600">
             Suppawit
             <br />
@@ -38,38 +42,46 @@ const Sidebar = () => {
           <p className="truncate text-tiny text-default-400">Frontend developer</p>
         </div>
       </div>
-      {collapsed && (
-        <>
-          <div className="space-y-2 pt-4">
-            {contactData.map((contact) => {
-              return (
-                <div className="px-3 text-sm space-y-1">
-                  <div>{contact.name}</div>
-                  <Link onClick={(e) => e.stopPropagation()} href={contact.link} className="opacity-60" target="_blank">
-                    {contact.value}
-                  </Link>
-                </div>
-              )
-            })}
-          </div>
-          <div className="space-y-2 pt-4">
-            <header className="flex items-center gap-3 rounded-medium border-small border-divider px-3">
-              <h2 className="font-bold">Education</h2>
-            </header>
+      {/* {collapsed && (
+        <> */}
+      <div
+        className={cn('space-y-2 pt-4 visible opacity-100 delay-100 ease duration-200 transition-opacity', {
+          'invisible opacity-0 absolute delay-0': !collapsed,
+        })}
+      >
+        {contactData.map((contact) => {
+          return (
             <div className="px-3 text-sm space-y-1">
-              {educationData.map((education) => {
-                return (
-                  <div>
-                    <div>{education.name}</div>
-                    <div className="opacity-60">({education.address})</div>
-                    <div>{education.year}</div>
-                  </div>
-                )
-              })}
+              <div>{contact.name}</div>
+              <Link onClick={(e) => e.stopPropagation()} href={contact.link} className="opacity-60" target="_blank">
+                {contact.value}
+              </Link>
             </div>
-          </div>
-        </>
-      )}
+          )
+        })}
+      </div>
+      <div
+        className={cn('space-y-2 pt-4 visible opacity-100 delay-100 ease duration-200 transition-opacity', {
+          'invisible opacity-0 absolute delay-0': !collapsed,
+        })}
+      >
+        <header className="flex items-center gap-3 rounded-medium border-small border-divider px-3">
+          <h2 className="font-bold">Education</h2>
+        </header>
+        <div className="px-3 text-sm space-y-1">
+          {educationData.map((education) => {
+            return (
+              <div>
+                <div>{education.name}</div>
+                <div className="opacity-60">({education.address})</div>
+                <div>{education.year}</div>
+              </div>
+            )
+          })}
+        </div>
+      </div>
+      {/* </>
+      )} */}
     </div>
   )
 }

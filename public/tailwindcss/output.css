@@ -2578,6 +2578,18 @@ video {
   transition-duration: 150ms;
 }
 
+.delay-200 {
+  transition-delay: 200ms;
+}
+
+.delay-0 {
+  transition-delay: 0s;
+}
+
+.delay-100 {
+  transition-delay: 100ms;
+}
+
 .\!duration-100 {
   transition-duration: 100ms !important;
 }
